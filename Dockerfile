@@ -11,6 +11,6 @@ RUN echo -e '\n[multilib]\nInclude = /etc/pacman.d/mirrorlist' >> /etc/pacman.co
            gst-plugins-good \
            hipchat \
            opera \
-           skype && \
+           teamviewer && \
     yes | pacman -Sqcc && \
     rm -rf /usr/share/man/*
