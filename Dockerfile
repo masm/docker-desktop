@@ -7,10 +7,10 @@ RUN echo -e '\n[multilib]\nInclude = /etc/pacman.d/mirrorlist' >> /etc/pacman.co
            chromium \
            firefox \
            flashplugin \
-           gst-libav \
-           gst-plugins-good \
+           gst-libav gst-plugins-good gstreamer0.10 gstreamer0.10-base xcb-util-keysyms \
            hipchat \
            opera \
+           slack-desktop \
            teamviewer && \
     yes | pacman -Sqcc && \
     rm -rf /usr/share/man/*
